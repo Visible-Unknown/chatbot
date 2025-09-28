@@ -11,22 +11,22 @@
 }
 
 #chatContainer::-webkit-scrollbar-track {
-  background: #1a1a1a;
+  background: #0f172a; /* slate-900 */
   border-radius: 3px;
 }
 
 #chatContainer::-webkit-scrollbar-thumb {
-  background: #333333;
+  background: #334155; /* slate-700 */
   border-radius: 3px;
 }
 
 #chatContainer::-webkit-scrollbar-thumb:hover {
-  background: #555555;
+  background: #475569; /* slate-600 */
 }
 
 /* Quick action buttons */
 .quick-action-btn {
-  @apply flex flex-col items-center p-4 bg-black rounded-lg cursor-pointer border border-white hover:bg-gray-900;
+  @apply flex flex-col items-center p-4 bg-slate-800 rounded-lg cursor-pointer border border-slate-600 hover:bg-slate-700;
 }
 
 .quick-action-btn i {
@@ -72,8 +72,8 @@
 
 /* Input focus effects */
 #messageInput:focus {
-  background-color: #1a1a1a;
-  border-color: #ffffff;
+  background-color: #0f172a; /* slate-900 */
+  border-color: #94a3b8; /* slate-400 */
 }
 
 /* Button hover effects - removed for clean look */
@@ -99,13 +99,13 @@
 
 /* Custom chat bubble styles */
 .chat-bubble.user {
-  background: #1a1a1a;
-  color: white;
+  background: #e2e8f0; /* slate-200 */
+  color: #0f172a; /* slate-900 */
 }
 
 .chat-bubble.ai {
-  background: #333333;
-  color: white;
+  background: #1f2937; /* gray-800 close to slate */
+  color: #e5e7eb; /* gray-200 */
 }
 
 /* Responsive design improvements */
@@ -187,30 +187,30 @@ input:focus {
 
 /* Enhanced button styles */
 .btn-primary {
-  background: #1a1a1a;
-  border: 1px solid #ffffff;
-  color: #ffffff;
+  background: #1f2937; /* gray-800 */
+  border: 1px solid #475569; /* slate-600 */
+  color: #e5e7eb; /* gray-200 */
 }
 
 .btn-primary:hover {
-  background: #333333;
+  background: #334155; /* slate-700 */
 }
 
 /* Input styling */
 .input {
   border-radius: 0.75rem;
-  border: 1px solid #ffffff;
-  background-color: #1a1a1a;
-  color: #ffffff;
+  border: 1px solid #475569; /* slate-600 */
+  background-color: #0f172a; /* slate-900 */
+  color: #e5e7eb; /* gray-200 */
 }
 
 .input:focus {
-  border-color: #ffffff;
-  background-color: #1a1a1a;
+  border-color: #94a3b8; /* slate-400 */
+  background-color: #0f172a; /* slate-900 */
 }
 
 .input::placeholder {
-  color: #666666;
+  color: #94a3b8; /* slate-400 */
 }
 
 /* Avatar styling */
@@ -225,7 +225,7 @@ input:focus {
   left: -2px;
   right: -2px;
   bottom: -2px;
-  background: #1a1a1a;
+  background: #1f2937; /* gray-800 */
   border-radius: 50%;
   z-index: -1;
 }

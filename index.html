@@ -16,16 +16,16 @@
     />
     <link href="styles.css" rel="stylesheet" />
   </head>
-  <body class="bg-black min-h-screen">
+  <body class="bg-slate-900 min-h-screen">
     <!-- Header -->
-    <header class="bg-black shadow-lg border-b border-white">
+    <header class="bg-slate-900 shadow-lg border-b border-slate-700">
       <div class="container mx-auto px-4 py-4">
         <div class="flex items-center justify-between">
           <div class="flex items-center space-x-3">
             <div
-              class="w-10 h-10 bg-white rounded-full flex items-center justify-center"
+              class="w-10 h-10 bg-slate-200 rounded-full flex items-center justify-center"
             >
-              <i class="fas fa-home text-black text-lg"></i>
+              <i class="fas fa-home text-slate-900 text-lg"></i>
             </div>
             <h1 class="text-2xl font-bold text-white">
               Accommodation Assistant
@@ -46,29 +46,29 @@
     <!-- Main Chat Container -->
     <main class="container mx-auto px-4 py-6 max-w-4xl">
       <div
-        class="bg-black rounded-2xl shadow-xl overflow-hidden border border-white"
+        class="bg-slate-900 rounded-2xl shadow-xl overflow-hidden border border-slate-700"
       >
         <!-- Chat Header -->
-        <div class="bg-white text-black p-4">
+        <div class="bg-slate-100 text-slate-900 p-4">
           <div class="flex items-center justify-between">
             <div class="flex items-center space-x-3">
               <div class="avatar">
                 <div
-                  class="w-12 rounded-full bg-black flex items-center justify-center"
+                  class="w-12 rounded-full bg-slate-900 flex items-center justify-center"
                 >
-                  <i class="fas fa-home text-white text-xl"></i>
+                  <i class="fas fa-home text-slate-100 text-xl"></i>
                 </div>
               </div>
               <div>
                 <h2 class="text-lg font-semibold">Accommodation Assistant</h2>
-                <p class="text-gray-600 text-sm">
+                <p class="text-slate-500 text-sm">
                   Ask about halls, mess, or hostel!
                 </p>
               </div>
             </div>
             <button
               id="clearChat"
-              class="btn btn-ghost btn-sm text-black hover:bg-gray-200"
+              class="btn btn-ghost btn-sm text-slate-900 hover:bg-slate-200"
             >
               <i class="fas fa-trash"></i>
               Clear Chat
@@ -79,22 +79,22 @@
         <!-- Chat Messages Area -->
         <div
           id="chatContainer"
-          class="h-96 overflow-y-auto p-4 space-y-4 bg-black"
+          class="h-96 overflow-y-auto p-4 space-y-4 bg-slate-900"
         >
           <!-- Welcome Message -->
           <div class="chat chat-start">
             <div class="chat-image avatar">
               <div
-                class="w-10 rounded-full bg-white flex items-center justify-center"
+                class="w-10 rounded-full bg-slate-200 flex items-center justify-center"
               >
-                <i class="fas fa-robot text-black"></i>
+                <i class="fas fa-robot text-slate-900"></i>
               </div>
             </div>
             <div class="chat-header">
               AI Assistant
               <time class="text-xs opacity-50" id="welcomeTime"></time>
             </div>
-            <div class="chat-bubble bg-white text-black">
+            <div class="chat-bubble bg-slate-100 text-slate-900">
               Hello! I'm your University Accommodation Assistant. I can help you
               with questions about halls, mess, hostel facilities, electricity
               bills, furniture, and more. What would you like to know?
@@ -107,12 +107,12 @@
           <div class="chat chat-start">
             <div class="chat-image avatar">
               <div
-                class="w-10 rounded-full bg-white flex items-center justify-center"
+                class="w-10 rounded-full bg-slate-200 flex items-center justify-center"
               >
-                <i class="fas fa-robot text-black"></i>
+                <i class="fas fa-robot text-slate-900"></i>
               </div>
             </div>
-            <div class="chat-bubble bg-gray-800 text-white">
+            <div class="chat-bubble bg-slate-800 text-slate-100">
               <div class="flex space-x-1">
                 <div
                   class="w-2 h-2 bg-gray-400 rounded-full animate-bounce"
@@ -131,7 +131,7 @@
         </div>
 
         <!-- Input Area -->
-        <div class="p-4 bg-black border-t border-white">
+        <div class="p-4 bg-slate-900 border-t border-slate-700">
           <div class="flex space-x-2">
             <div class="flex-1 relative">
               <input
@@ -163,7 +163,9 @@
 
       <!-- Quick Actions -->
       <div class="mt-6">
-        <h3 class="text-lg font-semibold text-white mb-3">Quick Questions</h3>
+        <h3 class="text-lg font-semibold text-slate-100 mb-3">
+          Quick Questions
+        </h3>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
           <button
             class="quick-action-btn"
@@ -198,9 +200,9 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-black shadow-lg mt-8 border-t border-white">
+    <footer class="bg-slate-900 shadow-lg mt-8 border-t border-slate-700">
       <div class="container mx-auto px-4 py-6">
-        <div class="text-center text-white">
+        <div class="text-center text-slate-200">
           <p>
             &copy; 2024 University Accommodation Assistant. Built with ❤️ using
             Tailwind CSS & DaisyUI
