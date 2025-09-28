@@ -97,13 +97,11 @@ class Chatbot {
     messageDiv.innerHTML = `
             <div class="chat-image avatar">
                 <div class="w-10 rounded-full ${
-                  sender === "user"
-                    ? "bg-gradient-to-r from-green-500 to-blue-500"
-                    : "bg-gradient-to-r from-blue-500 to-purple-600"
+                  sender === "user" ? "bg-white" : "bg-white"
                 } flex items-center justify-center">
                     <i class="fas ${
                       sender === "user" ? "fa-user" : "fa-robot"
-                    } text-white"></i>
+                    } text-black"></i>
                 </div>
             </div>
             <div class="chat-header">
@@ -112,8 +110,8 @@ class Chatbot {
             </div>
             <div class="chat-bubble ${
               sender === "user"
-                ? "bg-gradient-to-r from-green-500 to-blue-500 text-white"
-                : "bg-gradient-to-r from-blue-500 to-purple-600 text-white"
+                ? "bg-white text-black"
+                : "bg-gray-800 text-white"
             }">
                 ${this.formatMessage(content)}
             </div>

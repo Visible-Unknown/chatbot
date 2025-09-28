@@ -1,8 +1,8 @@
 /* Custom CSS for enhanced styling */
 
-/* Smooth animations */
+/* Remove transitions for clean look */
 * {
-  transition: all 0.3s ease;
+  transition: none;
 }
 
 /* Custom scrollbar for chat container */
@@ -11,22 +11,22 @@
 }
 
 #chatContainer::-webkit-scrollbar-track {
-  background: #374151;
+  background: #1a1a1a;
   border-radius: 3px;
 }
 
 #chatContainer::-webkit-scrollbar-thumb {
-  background: #6b7280;
+  background: #333333;
   border-radius: 3px;
 }
 
 #chatContainer::-webkit-scrollbar-thumb:hover {
-  background: #9ca3af;
+  background: #555555;
 }
 
 /* Quick action buttons */
 .quick-action-btn {
-  @apply flex flex-col items-center p-4 bg-gray-700 rounded-lg shadow-md hover:shadow-lg hover:scale-105 cursor-pointer border border-gray-600 hover:bg-gray-600;
+  @apply flex flex-col items-center p-4 bg-black rounded-lg cursor-pointer border border-white hover:bg-gray-900;
 }
 
 .quick-action-btn i {
@@ -34,12 +34,12 @@
 }
 
 .quick-action-btn span {
-  @apply text-sm font-medium text-gray-200;
+  @apply text-sm font-medium text-white;
 }
 
-/* Chat message animations */
+/* Chat message animations - removed for clean look */
 .chat-bubble {
-  animation: slideIn 0.3s ease-out;
+  /* No animations */
 }
 
 @keyframes slideIn {
@@ -72,22 +72,18 @@
 
 /* Input focus effects */
 #messageInput:focus {
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
-  background-color: #374151;
-  border-color: #3b82f6;
+  background-color: #1a1a1a;
+  border-color: #ffffff;
 }
 
-/* Button hover effects */
+/* Button hover effects - removed for clean look */
 .btn:hover {
-  transform: translateY(-1px);
+  /* No transform effects */
 }
 
-/* Gradient text */
+/* Solid text - no gradients */
 .gradient-text {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #ffffff;
 }
 
 /* Pulse animation for online indicator */
@@ -103,12 +99,12 @@
 
 /* Custom chat bubble styles */
 .chat-bubble.user {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #1a1a1a;
   color: white;
 }
 
 .chat-bubble.ai {
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  background: #333333;
   color: white;
 }
 
@@ -158,18 +154,18 @@
   }
 }
 
-/* Smooth transitions for all interactive elements */
+/* No transitions for clean look */
 button,
 input,
 .chat-bubble {
-  transition: all 0.2s ease-in-out;
+  transition: none;
 }
 
 /* Enhanced focus states */
 button:focus,
 input:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+  border-color: #ffffff;
 }
 
 /* Custom badge styles */
@@ -191,31 +187,30 @@ input:focus {
 
 /* Enhanced button styles */
 .btn-primary {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  border: none;
+  background: #1a1a1a;
+  border: 1px solid #ffffff;
+  color: #ffffff;
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%);
-  transform: translateY(-1px);
+  background: #333333;
 }
 
 /* Input styling */
 .input {
   border-radius: 0.75rem;
-  border: 2px solid #4b5563;
-  background-color: #374151;
-  color: #f9fafb;
+  border: 1px solid #ffffff;
+  background-color: #1a1a1a;
+  color: #ffffff;
 }
 
 .input:focus {
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
-  background-color: #374151;
+  border-color: #ffffff;
+  background-color: #1a1a1a;
 }
 
 .input::placeholder {
-  color: #9ca3af;
+  color: #666666;
 }
 
 /* Avatar styling */
@@ -230,7 +225,7 @@ input:focus {
   left: -2px;
   right: -2px;
   bottom: -2px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #1a1a1a;
   border-radius: 50%;
   z-index: -1;
 }
@@ -241,9 +236,9 @@ input:focus {
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
-/* Custom animations for new messages */
+/* No animations for clean look */
 .message-enter {
-  animation: messageSlideIn 0.4s ease-out;
+  /* No animations */
 }
 
 @keyframes messageSlideIn {
