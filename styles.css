@@ -216,6 +216,9 @@ input:focus {
 /* Avatar styling */
 .avatar {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .avatar::before {
@@ -228,6 +231,46 @@ input:focus {
   background: #1f2937; /* gray-800 */
   border-radius: 50%;
   z-index: -1;
+}
+
+/* Chat image avatar centering */
+.chat-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat-image .avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Icon centering within circular containers */
+.rounded-full {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.rounded-full i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  line-height: 1;
+}
+
+/* Specific icon centering */
+.fa-home,
+.fa-robot,
+.fa-user {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1;
 }
 
 /* Enhanced shadow effects */
