@@ -1,0 +1,11 @@
+figures:
+1. Response architecture
+2. Query table
+3. Intents ss
+4. chatbot UI ss
+5. flowchart
+6. backend er jnno ss
+7.  Logical View
+8.  Branching Storyline Sample
+9.  Use Cases of Dialougeflow
+10. Result accuracy 4 ta bar graph
