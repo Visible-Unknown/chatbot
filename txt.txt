@@ -9,3 +9,6 @@ figures:
 8.  Branching Storyline Sample
 9.  Use Cases of Dialougeflow
 10. Result accuracy 4 ta bar graph
+
+
+We conducted manual testing using approximately 235 queries gathered from a diverse group of students. To evaluate the model's performance, we compiled a CSV file containing these questions along with their expected responses. Then, we developed a Python script that automatically queries the model with each question, retrieves its outputs, compares them against the anticipated answers, and calculates the overall accuracy.
